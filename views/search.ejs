@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title> MTS search </title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+        <link rel="stylesheet" href="/search.css">
+    </head>
+
+    <body>
+
+        <div id="errorFlash">
+            <% if(error && error.length) { %>
+                <div class="ui red message"><%= error %></div>
+            <% } %>
+        </div>
+
+        
+            <h1 style="text-align: center;" class="ui header container"> 
+                <span style="background-color: rgba(0, 0, 0, 0.8)">&nbsp;<i class="rss square icon"></i> Search Movies and TV Shows &nbsp;</span> 
+            </h1>
+        <div class="formview">
+            <form class="ui form container" action="/ms/results" method="GET">
+                <div style="margin-bottom: 10px;" class="fluid ui large icon input">
+                    <input type="text" placeholder="Friends" name="searchQuery">
+                    <i class="search icon"></i>
+                </div>
+                <button class="fluid ui green large button" type="submit">Search</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title> MTS search </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+    <link rel="stylesheet" href="/app.css">
+</head>
+
+<body>
+
+    <div class="ui menu">
+        <div class="ui container">
+            <div class="header item"> <i class="rss square icon"></i> MTS Search </div>
+            <a href="/" class="item"> Home </a>
+            <a class="item" href="/about"> About </a>
+
+            <div class="right menu">
+                <div class="item">
+                    <div class="ui icon input">
+                        <form action="/ms/results" method="GET">
+                            <input type="text" placeholder="Harry Potter" name="searchQuery">
+                            <button class="ui green button"> Search </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="errorFlash">
+        <% if(error && error.length) { %>
+            <div class="ui red message"><%= error %></div>
+        <% } %>
+    </div>
+
+        

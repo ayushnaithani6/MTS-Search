@@ -1,0 +1,48 @@
+body {
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Montserrat;
+}
+
+i.rss.square.icon {
+    font-size: 3em;
+}
+
+.ui.main.text {
+    margin-top: 4.0em;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+#errorFlash {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.ui.huge.header {
+    font-family: Montserrat;
+    font-size: xx-large;
+    text-align: center;
+    color: black;
+}
+
+.ui.menu {
+    font-family: Montserrat;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 0 none !important;
+    box-shadow: none;
+}
+
+#nameHeader {
+    font-family: Montserrat;
+}
+
+.ui.floated.basic.violet.button {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+tr {
+    font-weight: bold;
+}

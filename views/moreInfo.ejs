@@ -1,0 +1,125 @@
+<%- include ("./partials/header") %>
+
+<div class="ui main text segment">
+
+    <table style="text-align: center;" class="ui celled table">
+        <col style="width: 30%;" />
+        <col style="width: 70%;" />
+        <thead>
+            <tr>
+                <th colspan="2" class="ui huge header" ><%= data.Title %></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>Title</td>
+                <td><%= data.Title %></td>
+            </tr>
+            
+            <tr>
+                <td>Year</td>
+                <td><%= data.Year %></td>
+            </tr>
+            
+            <tr>
+                <td>Poster</td>
+                <td><img class="ui centered rounded image" src="<%= data.Poster %>" ></td>
+            </tr>
+            
+            <tr>
+                <td>Released</td>
+                <td><%= data.Released %></td>
+            </tr>
+
+            <tr>
+                <td>Runtime</td>
+                <td><%= data.Runtime %></td>
+            </tr>
+
+            <tr>
+                <td>Genre</td>
+                <td><%= data.Genre %></td>
+            </tr>
+
+            <tr>
+                <td>Director</td>
+                <td><%= data.Director %></td>
+            </tr>
+
+            <tr>
+                <td>Writer(s)</td>
+                <td><%= data.Writer %></td>
+            </tr>
+
+            <tr>
+                <td>Actor(s)</td>
+                <td><%= data.Actors %></td>
+            </tr>
+
+            <tr>
+                <td>Plot</td>
+                <td><%= data.Plot %></td>
+            </tr>
+
+            <tr>
+                <td>Language</td>
+                <td><%= data.Language %></td>
+            </tr>
+
+            <tr>
+                <td>Country</td>
+                <td><%= data.Country %></td>
+            </tr>
+
+            <tr>
+                <td>Awards</td>
+                <td><%= data.Awards %></td>
+            </tr>
+
+            <tr>
+                <td>imdb Rating</td>
+                <td><%= data.imdbRating %></td>
+            </tr>
+
+            <tr>
+                <td>imdb Votes</td>
+                <td><%= data.imdbVotes %></td>
+            </tr>
+
+            <tr>
+                <td>imdb Id</td>
+                <td><%= data.imdbID %></td>
+            </tr>
+
+            <tr>
+                <td>Type</td>
+                <td><%= data.Type %></td>
+            </tr>
+
+            <% if(data.DVD) { %>
+                <tr>
+                    <td>DVD</td>
+                    <td><%= data.DVD %></td>
+                </tr>
+            <% } %>
+
+            <% if(data.BoxOffice) { %>
+                <tr>
+                    <td>Box Office</td>
+                    <td><%= data.BoxOffice %></td>
+                </tr>
+            <% } %>
+
+            <% if(data.Production) { %>
+                <tr>
+                    <td>Production</td>
+                    <td><%= data.Production %></td>
+                </tr>
+            <% } %>
+
+        </tbody>
+      </table>
+</div>
+
+<%- include ("./partials/footer") %>

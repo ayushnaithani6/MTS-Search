@@ -1,0 +1,29 @@
+body {
+	background-color:black;
+    background-image: url("https://lowgravityzoneblog.files.wordpress.com/2017/03/uir6argr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#errorFlash {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.formview {
+    width:30%; 
+    margin: 25px auto;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.ui.header.container {
+    color: white;
+    padding-top: 35vh;
+    margin: 25px auto;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+}

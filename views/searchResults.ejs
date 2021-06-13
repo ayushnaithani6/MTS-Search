@@ -1,0 +1,38 @@
+<%- include ("./partials/header") %>
+
+    <div id="resultsHeader" class="ui main text">
+        <div class="ui huge header"> Results of <%=results.searchQuery.toUpperCase()%> </div>
+        <div class="ui top attached segment">
+            <div class="ui divided items">
+
+                <% results.data["Search"].forEach((movie) => { %>
+                    <div class="item">
+                        <div class="image">
+                            <img src="<%= movie.Poster %>"/>
+                        </div> <!-- image -->
+                        <div style="margin-top: 2.5rem; text-align: center;" class="content">
+                            <a class="header" href="#">
+                                <p id="nameHeader"> <u><%= movie.Title.toUpperCase() %></u> </p>
+                            </a>
+
+                            <div class="description">
+                                <p><b>YEAR : </b><%= movie.Year %></p>
+                                <p><b>TYPE : </b><%= movie.Type.toUpperCase() %></p>
+                                <p><b>IMDB ID : </b><%= movie.imdbID %></p>
+                                <p><b>POSTER : </b><a href="<%= movie.Poster %>"  target="_blank" rel="noopener noreferrer"> Click to view </a> </p>
+                            </div> <!-- description -->
+                            <div class="extra">
+                                <a class="ui floated basic violet button" href="/ms/moreinfo/<%=movie.imdbID%>">
+                                    Read more
+                                    <i class="right chevron icon"></i>
+                                </a>
+                            </div> <!-- extra -->
+                        </div> <!-- content -->
+                    </div> <!-- item -->
+                <% }); %>
+
+            </div> <!-- divided items -->
+        </div> <!-- top attached segment -->
+    </div> <!-- main text container -->
+
+<%- include ("./partials/footer") %>
