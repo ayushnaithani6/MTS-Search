@@ -24,6 +24,6 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 
 // Port listener
-app.listen("3000", () => {
+app.listen(process.env.PORT, process.env.IP, () => {
     console.log("MTS Search Started");
 });
